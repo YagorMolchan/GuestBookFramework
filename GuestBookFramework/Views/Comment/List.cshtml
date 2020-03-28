@@ -1,0 +1,7 @@
+﻿@model IEnumerable<GuestBookFramework.Models.Entities.Comment>
+<ul id="comments">
+    @foreach (var item in Model)
+    {
+       @Html.Partial("_CommentPartial",item)
+    }
+</ul>
